@@ -32,16 +32,25 @@ Thời gian và ngày giờ cụ thể mà một hoạt động dự kiến ho�
 
 ## Reminders
 
-Lời nhắc được đặt để thông báo cho tôi về sự xảy ra của một sự kiện hoặc hoạt động khi cần thiết.
+Lời nhắc được thiết lập để thông báo cho người dùng trước một thời điểm hoặc sự kiện liên quan đến Activity, chẳng hạn như Schedule hoặc Deadline.
 
 ### Ví dụ
 
 * Nhắc trước giờ học PPL 15 phút
 * Nhắc trước deadline assignment 1 ngày
 
-## Progress / Status
+## Deadlines
 
-Trạng thái thể hiện mức độ hoàn thành của một hoạt động.
+Thời điểm cuối cùng mà một Activity cần được hoàn thành.
+
+### Ví dụ
+
+* PPL Assignment: 10/10/2026 23:59
+* Project: 20/10/2026 23:59
+
+## Status
+
+Trạng thái thể hiện tình trạng hoàn thành của một Activity Occurrence.
 
 ### Ví dụ
 
@@ -49,6 +58,7 @@ Trạng thái thể hiện mức độ hoàn thành của một hoạt động.
 * IN_PROGRESS
 * COMPLETED
 * CANCELLED
+
 ## Relationships
 
 ### Subject → Activity
@@ -59,24 +69,28 @@ Một Activity có thể thuộc về một Subject hoặc không thuộc Subjec
 
 ### Activity → Schedule
 
-Một Activity có thể được lên lịch vào một hoặc nhiều khoảng thời gian cụ thể.
+Một Activity có thể được lên lịch một lần hoặc theo một quy tắc lặp lại.
 
 Schedule xác định thời gian mà Activity dự kiến được thực hiện hoặc diễn ra.
 
+### Activity → Deadline
+
+Một Activity có thể có một Deadline, là thời điểm cuối cùng mà Activity cần được hoàn thành.
+
 ### Activity → Reminder
 
-Một Activity có thể có một hoặc nhiều Reminder để nhắc người dùng về thời gian hoặc thời hạn liên quan đến Activity đó.
+Một Activity có thể có một hoặc nhiều Reminder để nhắc người dùng về thời gian hoặc thời hạn liên quan đến Activity.
 
-### Activity → Progress / Status
+### Activity → Activity Occurrence
 
-Mỗi Activity có một trạng thái hiện tại thể hiện mức độ hoàn thành của Activity.
+Một Activity có thể tạo ra một hoặc nhiều Activity Occurrence.
 
-Ví dụ:
+Mỗi Activity Occurrence đại diện cho một lần cụ thể mà Activity được lên lịch để diễn ra.
 
-* TODO
-* IN_PROGRESS
-* COMPLETED
-* CANCELLED
+### Activity Occurrence → Status
+
+Mỗi Activity Occurrence có một trạng thái riêng và được quản lý độc lập với các Occurrence khác của cùng Activity.
+
 ## Activity Occurrence
 
 Một Activity có thể được lên lịch một lần hoặc lặp lại theo một quy tắc nhất định.

@@ -1,13 +1,29 @@
-### Functional Requirements
+# User Needs
 
-**FR01 — Xem lịch hoạt động**
-Hệ thống cho phép người dùng xem thời gian được lên lịch của các hoạt động.
+### UN01 — Nhận biết kế hoạch
 
-**FR02 — Tạo hoạt động**
-Hệ thống cho phép người dùng tạo một hoạt động mới và cung cấp các thông tin cần thiết cho hoạt động đó.
+Tôi cần biết mình sẽ thực hiện những hoạt động nào trong một ngày hoặc một tuần.
 
-**FR03 — Chỉnh sửa lịch hoạt động**
-Hệ thống cho phép người dùng thay đổi thời gian được lên lịch của một hoạt động.
+### UN02 — Sắp xếp hoạt động
 
-**FR04 — Cập nhật trạng thái hoặc tiến độ**
-Hệ thống cho phép người dùng cập nhật trạng thái hoặc mức độ hoàn thành của một hoạt động.
+Tôi cần có cách sắp xếp các hoạt động theo kế hoạch của bản thân một cách rõ ràng và hợp lý.
+
+### UN03 — Lập kế hoạch
+
+Tôi cần có khả năng lập kế hoạch cho các hoạt động của mình, bao gồm việc xác định thời gian thực hiện.
+
+### UN04 — Theo dõi tiến độ
+
+Tôi cần theo dõi được mức độ hoặc trạng thái hoàn thành của các hoạt động.
+
+### UN05 — Không bỏ sót hoạt động
+
+Tôi không muốn bỏ sót các hoạt động hoặc những thời hạn quan trọng.
+
+### UN06 — Tính ổn định
+
+Tôi cần hệ thống hoạt động ổn định và đáng tin cậy trong quá trình sử dụng.
+
+### UN07 — Trải nghiệm sử dụng
+
+Tôi muốn giao diện trực quan, dễ sử dụng và mang lại cảm giác dễ chịu khi sử dụng.
